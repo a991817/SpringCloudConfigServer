@@ -1,0 +1,20 @@
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8888/eureka/
+server:
+  port: 8892
+spring:
+  application:
+    name: service-feign
+  zipkin:
+      base-url: http://zyxy01.bamboocloud.com:9411
+  sleuth:
+    web:
+      client:
+        enabled: true
+feign:
+  hystrix:
+    enabled: true
+
